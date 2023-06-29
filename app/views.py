@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.http import JsonResponse
 from django.core.exceptions import SuspiciousOperation
 from django.views.decorators.csrf import csrf_exempt
-import urllib
+import urllib.request
 import json
 
 from .models import Reply
@@ -50,7 +50,7 @@ def echo(request):
     content = request.POST['text']
 
     result = {
-        'text': '<@{}> {}'.format(user_id, content),
+        'text': '<@{}> {}'.format(user_id, content.upper()),
         'response_type': 'in_channel'
     }
 
