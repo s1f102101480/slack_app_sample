@@ -7,7 +7,7 @@ import json
 
 from .models import Reply
 
-WEBHOOK_URL = 'https://hooks.slack.com/services/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'
+WEBHOOK_URL = 'https://hooks.slack.com/services/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'
 VERIFICATION_TOKEN = 'tte4lhmniYR0tQVJ5HF6CzxV'
 ACTION_HOW_ARE_YOU = 'HOW_ARE_YOU'
 
